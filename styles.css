@@ -8,6 +8,9 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    .noMargin{
+        margin: 0;
+    }
     .contenedor{
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -17,24 +20,55 @@
         box-sizing: border-box;
     }
     .boton{
+        display: block;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 3);
         border-style:dashed;
-        width: 90%;
-        max-width: 300px;
         background-color: #ffd935;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         font-size: 20px;
         font-weight: bolder;
-        padding: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 20px 10px 20px 10px;
         border-radius: 20px;
     }
+    .boton2{
+        padding: 30px 10px 30px 10px;
+        width: 90%;
+    }
+    .margin-top{
+        margin-top: 100px;
+    }
     h1{
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 3);
+        text-shadow: 2x 2px 6px rgba(0, 0, 0, 3);
         color: white;
         text-transform: uppercase;
         font-size: 35px;
         margin: 90px 0 90px 0;
+    }
+
+    .formulario{
+        background-color: var(--gris);
+        width: min(60rem, 90%);  /*usa el valor mas chiquito de los 2, entonces me ahorro el mq*/
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+    }
+
+    .campo{
+        margin-bottom: 1.5rem;
+    }
+
+    label{
+        display: block;
+        text-shadow: 2x 2px 6px rgba(0, 0, 0, 3);
+        color: white;
+        text-transform: uppercase;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
     }
