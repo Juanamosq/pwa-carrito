@@ -7,15 +7,48 @@
     <title>Ventas efectivo</title>
 </head>
 <body>
-    <h1>ventas en efectivo</h1>
+    <h1 class="margin-ventas">ventas en efectivo</h1>
 
     <div class="contenedorVentas">
-        <button class="boton botonP botonImg">Pancho</button>
-        <button class="boton botonHS botonImg">Hambur simple</button>
-        <button class="boton botonHD botonImg">Hambur doble</button>
-        <button class="boton botonG botonImg">Gaseosa</button>
-        <button class="boton botonGB botonImg">G. bebé</button>
-        <button class="boton botonA botonImg">Agua</button>
+        <div class="producto">
+            <span class="contador" id="contador-pancho">0</span>
+            <button class="contador restador" onclick="decrementarContador('pancho')">-</button>
+            <button class="boton producto-boton botonP botonImg" onclick="incrementarContador('pancho')">Pancho</button>
+        </div>
+
+        <div class="producto">
+            <span class="contador" id="contador-hs">0</span>
+            <button class="contador restador" onclick="decrementarContador('hs')">-</button>
+            <button class="boton producto-boton botonHS botonImg" onclick="incrementarContador('hs')">Hambur simple</button>
+        </div>
+
+        <div class="producto">
+            <span class="contador" id="contador-hd">0</span>
+            <button class="contador restador" onclick="decrementarContador('hd')">-</button>
+            <button class="boton producto-boton botonHD botonImg" onclick="incrementarContador('hd')">Hambur doble</button>
+        </div>
+
+        <div class="producto">
+            <span class="contador" id="contador-g">0</span>
+            <button class="contador restador" onclick="decrementarContador('g')">-</button>
+            <button class="boton producto-boton botonG botonImg" onclick="incrementarContador('g')">Gaseosa</button>
+        </div>
+
+        <div class="producto">
+            <span class="contador" id="contador-gb">0</span>
+            <button class="contador restador" onclick="decrementarContador('gb')">-</button>
+            <button class="boton producto-boton botonGB botonImg" onclick="incrementarContador('gb')">G. bebé</button>
+        </div>
+
+        <div class="producto">
+            <span class="contador" id="contador-a">0</span>
+            <button class="contador restador" onclick="decrementarContador('a')">-</button>
+            <button class="boton producto-boton botonA botonImg" onclick="incrementarContador('a')">Agua</button>
+        </div>
     </div>
+
+    <a href="./index.html" class="boton">Cerrar venta</a>
+
+    <script src="app.js"></script>
 </body>
 </html>
